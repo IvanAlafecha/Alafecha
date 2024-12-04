@@ -1,0 +1,71 @@
+/* assets/styles.css */
+
+/* Establecer un fondo con un degradado de 45 grados entre naranja y morado */
+body {
+    background: linear-gradient(45deg, #EF794B, #9353A6);
+    font-family: Arial, sans-serif;
+    color: #ffffff;  /* Texto en blanco para contraste */
+}
+
+/* Título principal en blanco */
+h1, h2 {
+    color: #ffffff;  /* Blanco */
+    font-size: 36px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo para el Dropdown */
+#label-dropdown {
+    width: 50%;  /* Ajustar el tamaño del Dropdown */
+    padding: 10px;
+    margin: 10px;  /* Centrar el Dropdown */
+    border-radius: 5px;
+    border: 2px solidlinear-gradient(45deg, #EF794B, #9353A6); /* Morado */
+    background-color:  linear-gradient(45deg, #EF794B, #9353A6);  /* Fondo morado claro */
+    color: #ffffff;  /* Texto blanco */
+}
+
+/* Cambio de color cuando el Dropdown está seleccionado */
+#label-dropdown .Select-control {
+    background-color: #ffffff !important; /* Fondo morado claro */
+    color: #ffffff !important;  /* Texto blanco */
+}
+
+#label-dropdown .Select-placeholder {
+    color: #ffffff !important;  /* Color del texto del placeholder */
+}
+
+#label-dropdown .Select-menu-outer {
+    background-color:  #EF794B  !important; /* Fondo de la lista de opciones */
+}
+
+#label-dropdown .Select-option {
+    color: #ffffff;  /* Color del texto de las opciones */
+    background-color: linear-gradient(45deg, #EF794B, #9353A6); /* Fondo morado para las opciones */
+}
+
+#label-dropdown .Select-option.is-selected {
+    background-color: #ffffff;  /* Fondo naranja para la opción seleccionada */
+    color: #EF794B;  /* Color del texto de la opción seleccionada */
+}
+
+/* Gráfico (aumentar el tamaño de la gráfica) */
+.dash-graph {
+    margin: 30px auto;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco translúcido */
+}
+
+/* Estilo para la imagen */
+img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 200px;
+}
+
+/* Estilo general para los márgenes de los elementos */
+div {
+    margin-top: 30px;
+}
