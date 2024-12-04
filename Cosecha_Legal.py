@@ -4,8 +4,9 @@ from dash import dcc, html
 from dash.dependencies import Input, Output
 import plotly.express as px
 
+Uri='https://raw.githubusercontent.com/IvanAlafecha/Alafecha/refs/heads/master/Prueba.csv'
 # Cargar los datos
-new_df = pd.read_excel('C:\\Users\\IVAN.LIPES\\Documents\\Prueba.xlsx')
+new_df = pd.read_csv(Uri)
 
 # Limpiar los datos
 new_df.columns = new_df.columns.str.strip()  # Eliminar espacios extra en los nombres de las columnas
@@ -16,8 +17,9 @@ labels = ['Promedio', 'ene--21', 'feb--21', 'mar--21', 'abr--21', 'may--21', 'ju
           'ene--23', 'feb--23', 'mar--23', 'abr--23', 'may--23', 'jun--23', 'jul--23', 'ago--23', 'sep--23', 'oct--23', 'nov--23', 'dic--23',
           'ene--24', 'feb--24', 'mar--24', 'abr--24', 'may--24', 'jun--24', 'jul--24', 'ago--24', 'sep--24', 'oct--24']
 
+uri_2='https://raw.githubusercontent.com/IvanAlafecha/Alafecha/refs/heads/master/Recaudo_pagos.csv'
 # Cargar el segundo dataframe Recaudo
-Recaudo = pd.read_excel('C:\\Users\\IVAN.LIPES\\Documents\\Recaudo_pagos.xlsx')
+Recaudo = pd.read_csv(uri_2)
 
 # Limpiar los datos
 Recaudo.columns = Recaudo.columns.str.strip()  # Eliminar espacios extra en los nombres de las columnas
